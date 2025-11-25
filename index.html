@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Arkusz 4</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+.kontener {
+    border: 1px solid #000;
+}
+
+.blok {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.stopka {
+    border-bottom: none;
+}
+
+.glowny {
+    padding-top: 35px;
+}
+
+.tytul {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background: white;
+    padding: 0 4px;
+    font-weight: bold;
+}
+.sekcje {
+    border: 1px solid #000;
+    display: flex;
+    height: 200px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.sekcja {
+    flex: 1;
+    border-right: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sekcja.prawa {
+    border-right: none;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="kontener">
+
+    <div class="blok naglowek">
+        Blok nagłówkowy
+    </div>
+
+    <div class="blok nawigacja">
+        Blok nawigacyjny
+        <a href="https://zophex.github.io/Strona/">
+            <h4>powrót</h4>
+        </a>
+    </div>
+
+    <div class="blok glowny">
+        <div class="tytul">Blok główny</div>
+
+        <div class="sekcje">
+            <div class="sekcja lewa">Sekcja<br>lewa</div>
+            <div class="sekcja prawa">Sekcja<br>prawa</div>
+        </div>
+    </div>
+
+    <div class="blok stopka">
+        Blok stopki
+    </div>
+
+</div>
+
+</body>
+</html>
